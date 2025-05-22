@@ -1,5 +1,9 @@
 # Exercise 4
 
+# Write the sequence 0x12345678 into $t1. Next, write code that reverses the sequence,
+# writing 0x87654321 into $t2. Obviously, the code should invert the bits of $t1 and not 
+# simply write 0x87654321 directly into $t2.
+
 ori $t3, $zero, 0x1234	# OR IMEDIATE operation between $zero and 0x00001234 and stores it in $t3.
 sll $t1, $t3, 16	# Shifts $t3 16 bits to the left: 0x12340000 and stores it in $t1.
 ori $t1, $t1, 0x5678	# OR IMEDIATE operation between $t1 and 0x00005678 and stores it in $t1. $t1 = 0x12345678

@@ -1,5 +1,10 @@
 # Exercise 2
 
+# Write 0xAAAAAAAA into $t1. Shift this value one bit to the right and place the result in $t2, 
+# leaving $t1 unchanged. In $t3, $t4, and $t5, place the results of the OR, AND, and XOR operations
+# between $t1 and $t2, respectively. In comments at the end of the code, explain the results obtained,
+# showing the binary values.
+
 ori $t1, $zero, 0xaaaa  # ORI operation between $zero and 0xaaaa, stores the result in $t1.
 sll $t1, $t1, 16	# Shifts to the left the value stored in $t1 by 16 bits and stores the result in $t1. 
 ori $t1, $t1, 0xaaaa	# ORI operation between $t1 and 0xaaaa, stores the result in $t1.
